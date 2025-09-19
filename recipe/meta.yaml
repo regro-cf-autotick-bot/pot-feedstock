@@ -1,6 +1,6 @@
 {% set name = "pot" %}
-{% set version = "0.9.5" %}
-{% set sha256 = "9644ee7ff51c3cffa3c2632b9dd9dff4f3520266f9fb771450935ffb646d6042" %}
+{% set version = "0.9.6" %}
+{% set sha256 = "07368b69d0e74382e9c1474548bb60281b0dc4e9974f12a58b4655c80f2185d6" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [python_impl == 'pypy']
   script:
     - {{ PYTHON }} -m pip install . -vv
