@@ -36,7 +36,6 @@ requirements:
     - python
     - numpy
     - scipy >=1.0
-    - matplotlib-base >=1.5
 
 test:
   imports:
